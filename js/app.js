@@ -14,7 +14,7 @@ function getTime() {
     const month = now.getMonth() < 10 ? '0' + (now.getMonth() + 1) : now.getMonth()
     const year = now.getFullYear()
     const hour = now.getHours() < 10 ? '0' + now.getHours() : now.getHours()
-    const minut = now.getMinutes()
+    const minut = now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes()
     const second = now.getSeconds() < 10 ? '0' + now.getSeconds() : now.getSeconds()
 
     const week = [
@@ -48,7 +48,6 @@ function getTime() {
     elSecond.textContent = second
     elFullYear.textContent = `${date} ${months[month]}, ${year}`
     elFullWeek.textContent = `${week[day_title]}`
-    elYears.textContent = `${year} - ${elYear}`
 }
 
 setInterval(getTime, 1000)

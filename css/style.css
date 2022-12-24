@@ -1,6 +1,8 @@
 body {
     background-image: url(../img/bg.png);
+    background-color: black;
     color: aqua;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .conainer {
@@ -27,4 +29,34 @@ h2 {
 
 span {
     font-size: 10rem;
+}
+
+
+@media only screen and (max-width:992px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    span {
+        font-size: 7rem;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    span {
+        font-size: 5rem;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 3rem;
+    }
+
 }
