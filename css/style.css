@@ -34,6 +34,10 @@ span {
 
 
 @media only screen and (max-width:992px) {
+    .conainer {
+        max-width: 800px;
+    }
+
     h2 {
         font-size: 3rem;
     }
@@ -45,13 +49,21 @@ span {
 }
 
 @media only screen and (max-width:768px) {
+    .conainer {
+        max-width: 600px;
+    }
+
     span {
         font-size: 5rem;
     }
 
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:576px) {
+    .conainer {
+        max-width: 400px;
+    }
+
     h2 {
         font-size: 2rem;
     }
