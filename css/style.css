@@ -2,7 +2,7 @@ body {
     background-image: url(../img/bg.png);
     background-color: black;
     color: aqua;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace,serif;
     overflow-x: hidden;
 }
 
@@ -53,6 +53,10 @@ span {
         max-width: 600px;
     }
 
+    .time-container {
+        margin-top: 5rem;
+    }
+
     span {
         font-size: 5rem;
     }
@@ -62,6 +66,10 @@ span {
 @media only screen and (max-width:576px) {
     .conainer {
         max-width: 400px;
+    }
+
+    .time-container {
+        margin-top: 3rem;
     }
 
     h2 {
